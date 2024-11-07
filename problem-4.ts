@@ -9,7 +9,9 @@
     width: number;
     height: number;
   };
+
   type Shape = Circle | Rectangle;
+
   // declare function type
   type FunctionType = (shape: Shape) => number;
 

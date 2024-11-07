@@ -1,11 +1,11 @@
 {
   ////////////////////////////////
 
-  const data: number[] = [1, 2, 2, 3, 4, 4, 5, 5, 5, 6];
+  const data: number[] = [1, 2, 2, 3, 4, 4, 5];
 
   //   declare function type
   type FunctionType = (numbers: number[]) => number[];
-// Function ==>
+  // Function ==>
   const removeDuplicates: FunctionType = (numbers) => {
     let newArray: number[] = [];
     for (let number of numbers) {
@@ -17,5 +17,7 @@
   };
   const result = removeDuplicates(data);
   console.log(result);
+
+  
   ////////////////////////////////
 }

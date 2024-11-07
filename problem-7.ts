@@ -8,6 +8,7 @@
       public model: string,
       public year: number
     ) {}
+    // Function ==>
     getCarAge(): number {
       return new Date().getFullYear() - this.year;
     }
