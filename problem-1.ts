@@ -21,10 +21,10 @@
   };
 
   const result = sumArray(arrayData);
-  console.log(`using reduce total sum is = ${result}`);
+  console.log(result);
 
   const result2 = sumArray2(arrayData);
-  console.log(`using for of total sum is = ${result2}`);
+  console.log(result2);
 
   ///////////////////////////
 }

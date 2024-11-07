@@ -5,6 +5,7 @@
   // declare function type
   type FunctionType = (sentence: string, word: string) => number;
 
+  // Function ==>
   const countWordOccurrences: FunctionType = (sentence, word) => {
     return sentence
       .toLocaleLowerCase()
