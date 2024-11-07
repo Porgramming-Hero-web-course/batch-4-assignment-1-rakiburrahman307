@@ -7,18 +7,18 @@
 
 ### Example
 
-type Shape = Circle | Rectangle; ====> Union type /n
-type FunctionType = (shape: Shape) => number; ====> Function type /n
+type Shape = Circle | Rectangle; ====> Union type <br>
+type FunctionType = (shape: Shape) => number; ====> Function type<br>
 
-const calculateShapeArea: FunctionType = (shape) => {  /n
-if (shape.shape === "circle") { /n
-return parseFloat((Math.PI _ Math.pow(shape.radius, 2)).toFixed(2)); /n
-} else if (shape.shape === "rectangle") { /n
-return shape.width _ shape.height; /n
-} else { /n
-throw new Error("Invalid shape type"); /n
-} /n
-}; /n
+const calculateShapeArea: FunctionType = (shape) => { <br>
+if (shape.shape === "circle") { <br>
+return parseFloat((Math.PI _ Math.pow(shape.radius, 2)).toFixed(2));<br>
+} else if (shape.shape === "rectangle") { <br>
+return shape.width _ shape.height; <br>
+} else { <br>
+throw new Error("Invalid shape type"); <br>
+} <br>
+}; <br>
 
 const circleArea = calculateShapeArea({ shape: "circle", radius: 5 }); ==> valid
 
