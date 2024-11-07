@@ -2,16 +2,31 @@
 
 - A union type represents a variable that can hold one of multiple types.
 
-* syntax: type UnionType = string | number;
+* syntax: type Shape = Circle | Rectangle;
 * Use Case: When you want a variable to accept different types, like a parameter that could be a string or number.
 
 ### Example
 
-const printId=(id: string | number)=> {
-console.log("Your ID is: " + id);
+type Shape = Circle | Rectangle; ====> Union type
+type FunctionType = (shape: Shape) => number; ====> Function type
+
+const calculateShapeArea: FunctionType = (shape) => {
+if (shape.shape === "circle") {
+return parseFloat((Math.PI _ Math.pow(shape.radius, 2)).toFixed(2));
+} else if (shape.shape === "rectangle") {
+return shape.width _ shape.height;
+} else {
+throw new Error("Invalid shape type");
 }
-printId(101); // Valid
-printId("ABC123"); // Also valid
+};
+
+const circleArea = calculateShapeArea({ shape: "circle", radius: 5 }); ==> valid
+
+const rectangleArea = calculateShapeArea({
+shape: "rectangle",
+width: 4,
+height: 6,
+}); ===> also valid
 
 ## intersection types
 
@@ -28,13 +43,13 @@ age: number;
 }
 
 interface Employee {
-employeeId: number;
+id: number;
 }
 
 type EmployeePerson = Person & Employee;
 
-const john: EmployeePerson = {
-name: "John Doe",
-age: 30,
-employeeId: 101,
+const Rakib: EmployeePerson = {
+name: "Rakib",
+age: 25,
+id: 101,
 };

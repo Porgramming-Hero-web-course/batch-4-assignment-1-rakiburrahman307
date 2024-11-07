@@ -1,7 +1,7 @@
 {
   ////////////////////////////////
 
-  const arrayData: number[] = [1, 2, 3, 4, 5];
+  const data: number[] = [1, 2, 3, 4, 5];
 
   //   declare function type
   type FunctionType = (numbers: number[]) => number;
@@ -21,10 +21,10 @@
     return sum;
   };
 
-  const result = sumArray(arrayData);
+  const result = sumArray(data);
   console.log(result);
 
-  const result2 = sumArray2(arrayData);
+  const result2 = sumArray2(data);
   console.log(result2);
 
   ///////////////////////////
