@@ -2,6 +2,8 @@
 
 - A union type represents a variable that can hold one of multiple types.
 
+- Using the | we are saying our parameter is a string or number:
+
 * syntax: type Shape = Circle | Rectangle;
 * Use Case: When you want a variable to accept different types, like a parameter that could be a string or number.
 
